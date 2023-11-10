@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Portfolio | Felipe</title>
+  <meta name="description" content="Pipe - Personal Portfolio & Resume HTML Template" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="./images/pipe.png" />
+
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="./css/all.min.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="./css/simple-line-icons.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="./css/slick.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+
+  <style>
+    .float-back {
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      bottom: 100px;
+      right: 25px;
+      background-color: rgb(0, 0, 0);
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- preloader -->
+  <div id="preloader">
+    <div class="outer">
+      <div class="spinner">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- site wrapper -->
+  <div class="site-wrapper">
+    <!-- mobile header -->
+    <div class="mobile-header py-2 px-3 mt-4">
+      <button class="menu-icon mr-2">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="/" class="logo"><img src="./images/pipe.png" alt="Bako Doe" /></a>
+      <a href="/" class="site-title dot ml-2">Felipe Castro</a>
+    </div>
+
+    <!-- header -->
+    <header class="left float-left shadow-dark" id="header">
+      <button type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+
+      <div class="header-inner d-flex align-items-start flex-column">
+        <a href="/"><img src="./images/pipe.png" alt="Bako Doe" width="70" height="70" /></a>
+        <a href="/" class="site-title dot mt-3">Felipe Castro.</a>
+        <span class="site-slogan">Software Developer</span>
+
+        <!-- navigation menu -->
+        <nav>
+          <ul class="vertical-menu scrollspy">
+            <li>
+              <a href="#home" class="active"><i class="icon-home"></i>Inicio</a>
+            </li>
+            <li>
+              <a href="#about"><i class="icon-user"></i>Sobre mí</a>
+            </li>
+            <li>
+              <a href="#services"><i class="icon-bulb"></i>Servicios</a>
+            </li>
+            <li>
+              <a href="#resume"><i class="icon-graduation"></i>Resumen</a>
+            </li>
+            <li>
+              <a href="#contact"><i class="icon-phone"></i>Contacto</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- footer -->
+        <div class="footer mt-auto">
+          <!-- social icons -->
+          <ul class="social-icons list-inline">
+
+            <li class="list-inline-item" title="Linkedin">
+              <a target="_blank" href="https://www.linkedin.com/in/felipe-andres-castro-espinoza-058824122/"><i
+                  class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="list-inline-item" title="Github">
+              <a target="_blank" href="https://github.com/katarro/"><i class="fab fa-github"></i></a>
+            </li>
+          </ul>
+
+          <!-- dark mode button -->
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider round"></div>
+            </label>
+            <em class="align-middle"> &nbsp; Habilitar modo oscuro!</em>
+          </div>
+
+          <!-- copyright -->
+          <span class="copyright">Configurado con
+            <i style="color: #ff5959" class="fas fa-heart"></i> el 2023 <br />
+        </div>
+      </div>
+    </header>
+
+    <!-- main content area -->
+    <main class="content float-right">
+      <!-- section hero -->
+      <section class="hero background parallax shadow-dark d-flex align-items-center" id="home"
+        data-image-src="./images/background-1.jpg">
+        <div class="cta mx-auto mt-2">
+          <h1 class="mt-0 mb-4 typewrite" data-period="2000" data-type='[ "Hola Mundo!", "Soy Felipe." ]'>
+            <span class="wrap"></span><span class="dot"></span>
+          </h1>
+          <p class="mb-4">
+            “Las grandes oportunidades nacen de haber sabido aprovechar las pequeñas” - Bill Gates
+          </p>
+          <a href="#resume" class="btn btn-default btn-lg mr-3"><i class="icon-grid"></i>Ver Resumen</a>
+          <div class="spacer d-md-none d-lg-none d-sm-none" data-height="10"></div>
+          <a target="_blank"
+            href="mailto:pipe[dot]castro[espinoza][at]gmail[dot]com?body=PLEASE CHANGE RECIPIENT'S EMAIL WITH THE CORRECT SYMBOL!"
+            class="btn btn-border-light btn-lg"><i class="icon-envelope"></i>Contactame</a>
+        </div>
+        <div class="overlay"></div>
+      </section>
+
+      <!-- section about -->
+      <section id="about" class="shadow-blue white-bg padding">
+        <h3 class="section-title">Sobre mi</h3>
+        <div class="spacer" data-height="80"></div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <img src="./images/pipe.png" alt="about" />
+          </div>
+          <div class="col-md-9">
+            <h2 class="mt-4 mt-md-0 mb-4">Hola,</h2>
+            <p class="mb-0">
+              Soy un Desarrollador de Software, con experiencia la creación de sistemas web, cubriendo tanto el Frontend
+              como el Backend. Mi experiencia laboral, practica y académica incluye trabajar en proyectos desde su etapa
+              inicial hasta su lanzamiento, tanto en sitios web de carácter informativo como en aplicaciones orientadas
+              al sector empresarial.
+
+              He colaborado en equipos donde el trabajo me ha permitido adquirir conocimientos prácticos en la
+              Arquitectura de Microservicios.
+
+              He tenido la oportunidad de gestionar diversos proyectos desde su fase inicial hasta su despliegue
+              efectivo, manejando tecnologías avanzadas como React.js, Node.js, así como bases de datos PostgreSQL.
+
+
+            </p>
+            <div class="row my-4">
+              <div class="col-md-6">
+                <p class="mb-2">
+                  Name: <span class="text-dark">Felipe Castro</span>
+                </p>
+                <p class="mb-0">
+                  Cumpleaños: <span class="text-dark">14 Julio, 1998</span>
+                </p>
+              </div>
+              <div class="col-md-6 mt-2 mt-md-0 mt-sm-2">
+                <p class="mb-2">
+                  Localidad: <span class="text-dark">Santiago de Chile</span>
+                </p>
+                <p class="mb-0">
+                  Email:
+                  <span class="text-dark">pipe.castro.espinoza.gmail.com</span>
+                </p>
+              </div>
+            </div>
+            <a target="_blank"
+              href="https://adityacprtm-shared.s3-ap-southeast-1.amazonaws.com/pdf/Aditya_Pratama_CV.pdf"
+              class="btn btn-default mr-3"><i class="icon-cloud-download"></i>Descargar CV</a>
+            <a target="_blank"
+              href="mailto:pipe[dot]castro[dor]espinoza[at]gmail[dot]com?body=PLEASE CHANGE RECIPIENT'S EMAIL WITH THE CORRECT SYMBOL!"
+              class="btn btn-alt mt-2 mt-md-0 mt-xs-2"><i class="icon-envelope"></i>Contactame</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- section skills -->
+      <section id="skills" class="shadow-blue white-bg padding">
+        <h3 class="section-title">Mis habilidades</h3>
+        <div class="spacer" data-height="50"></div>
+
+        <p class="mb-0">
+          El verdadero peligro no es que las computadoras comenzaran a pensar como los hombres, sino que los hombres
+          comenzaran a pensar como las computadoras<strong> - Sydney J. Harris</strong>
+        </p>
+
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <!-- skill item -->
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Amazon Web Services</h4>
+                <span class="float-right">Básico</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="col-md-6">
+            <!-- skill item -->
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Telecomunicaciones</h4>
+                <span class="float-right">Básico</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-md-6">
+            <!-- skill item -->
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Desarrollo Fronted</h4>
+                <span class="float-right">Intermedio</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!-- skill item -->
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Desarrollo Backend</h4>
+                <span class="float-right">Intermedio</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6">
+            <!-- skill item -->
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">League of Leagend</h4>
+                <span class="float-right">Experto</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+                </div>
+              </div>
+              <div class="spacer d-md-none d-lg-none" data-height="50"></div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!-- skill item -->
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">PowerLifting</h4>
+                <span class="float-right">Experto</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+                </div>
+              </div>
+              <div class="spacer d-md-none d-lg-none" data-height="50"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Section tecnologies -->
+
+      <section id="skills" class="shadow-blue white-bg padding">
+        <h3 class="section-title">Mis tecnologias</h3>
+        <div class="spacer" data-height="20"></div>
+
+        <p class="mb-0">
+          La conectividad es un derecho humano <strong> - Mark Zuckerberg</strong>
+        </p>
+
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <!-- skill item -->
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Python</h4>
+                <span class="float-right">Intermediate</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-6">
+            <!-- skill item -->
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">ReactJs</h4>
+                <span class="float-right">Intermedio</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!-- skill item -->
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Nodejs</h4>
+                <span class="float-right">Intermedio</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!-- skill item -->
+            <div class="skill-item">
+              <div class="skill-info clearfix">
+                <h4 class="float-left mb-3 mt-0">Postgresql</h4>
+                <span class="float-right">Intermedio</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40">
+                </div>
+              </div>
+              <div class="spacer" data-height="50"></div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </section>
+
+
+
+      <!-- section facts -->
+      <section id="facts" class="shadow-dark color-white background parallax padding-50"
+        data-image-src="./images/background-2.jpg">
+
+        <div class="row relative z-1">
+
+          <div class="col-md-4 col-sm-6">
+            <!-- fact item -->
+            <div class="fact-item text-center">
+              <i class="icon-like icon-circle"></i>
+              <h2 id="count1" class="count">3</h2>
+              <span>Proyectos Completados</span>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- fact item -->
+            <div class="fact-item text-center">
+              <i class="icon-cup icon-circle"></i>
+              <h2 id="count2" class="count">1000</h2>
+              <span>Tazas de café</span>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- fact item -->
+            <div class="fact-item text-center">
+              <i class="icon-emotsmile icon-circle"></i>
+              <h2 id="count3" class="count">50</h2>
+              <span>Clientes Felices</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="overlay"></div>
+      </section>
+
+      <!-- section services -->
+      <section id="services" class="shadow-blue white-bg padding">
+        <h3 class="section-title">Qué estoy haciendo</h3>
+        <div class="spacer" data-height="80"></div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <!-- service item -->
+            <div class="service-item text-center">
+              <i class="fa fa-cloud icon-simple"></i>
+              <h4 class="my-3">Cloud Computing</h4>
+            </div>
+            <div class="spacer" data-height="20"></div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- service item -->
+            <div class="service-item text-center">
+              <i class="fa fa-network-wired icon-simple"></i>
+              <h4 class="my-3">Telecomunicaciones</h4>
+            </div>
+            <div class="spacer" data-height="20"></div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <!-- service item -->
+            <div class="service-item text-center">
+              <i class="fa fa-laptop-code icon-simple"></i>
+              <h4 class="my-3">Desarrollo Web</h4>
+            </div>
+            <div class="spacer" data-height="20"></div>
+          </div>
+
+
+        </div>
+      </section>
+
+      <!-- section experience -->
+      <section id="resume" class="shadow-blue white-bg padding">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="section-title">Educación</h3>
+            <div class="spacer" data-height="80"></div>
+
+            <!-- timeline -->
+            <div class="timeline">
+              <div class="entry">
+                <div class="title">
+                  <span>2005 - 2016</span>
+                </div>
+                <div class="body">
+                  <h4 class="mt-0">Basica - Media</h4>
+                  <p>Colegio María Auxiliadora<br />Santiago - Chile</p>
+                </div>
+              </div>
+              <div class="entry">
+                <div class="title">
+                  <span>2017 - 2018</span>
+                </div>
+                <div class="body">
+                  <h4 class="mt-0">Ingenieria Civil en Computación</h4>
+                  <p>
+                    UTEM <br />
+                    Santiago - Chile
+                  </p>
+                </div>
+              </div>
+              <div class="entry">
+                <div class="title">
+                  <span>2019 - 2023</span>
+                </div>
+                <div class="body">
+                  <h4 class="mt-0">Ingenieria Civil Informática y Telecomunicaciones</h4>
+                  <p>
+                    UDP <br />
+                    Santiago - Chile
+                  </p>
+                </div>
+              </div>
+
+              <span class="timeline-line"></span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3 class="section-title">Experiencia</h3>
+            <div class="spacer" data-height="80"></div>
+
+            <!-- timeline -->
+            <div class="timeline">
+
+              <div class="entry">
+                <div class="title">
+                  <span>2020</span>
+                </div>
+                <div class="body">
+                  <h4 class="mt-0 ml-0">
+                    Tutor Privado
+                  </h4>
+                  <p>Profesor particular en Materias de Ingenieria</p>
+                </div>
+              </div>
+              <div class="entry">
+                <div class="title">
+                  <span>2021</span>
+                </div>
+                <div class="body">
+                  <h4 class="mt-0">Approvecha</h4>
+                  <p>Desarrollador Backend y Frontend</p>
+                </div>
+              </div>
+
+              <div class="entry">
+                <div class="title">
+                  <span>2022</span>
+                </div>
+                <div class="body">
+                  <h4 class="mt-0">Clinica Santa María</h4>
+                  <p>Automatización de Procesos Clínicos</p>
+                </div>
+              </div>
+
+              <span class="timeline-line"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Clientes -->
+      <!-- <section id="clients" class="shadow-dark background-blue color-white padding-50">
+        <h2 class="d-none">Clients</h2>
+        <div class="clients-wrapper row slick-initialized slick-slider">
+
+          <div aria-live="polite" class="slick-list draggable">
+            <div class="slick-track" role="listbox"
+              style="opacity: 1; width: 2030px; transform: translate3d(-290px, 0px, 0px);">
+              <div class="col-md-3 slick-slide slick-cloned" tabindex="-1" role="option"
+                aria-describedby="slick-slide04" style="width: 290px; height: 100px;" data-slick-index="-1" aria-hidden="true">
+              </div>
+
+              <div class="col-md-3 slick-slide" tabindex="-1" role="option" aria-describedby="slick-slide04"
+                style="width: 350px;" data-slick-index="1" aria-hidden="true">
+                <div class="client-item">
+                  <div class="inner">
+                    <img src="./images/approvecha.png" alt="client-name" style="height: 60px;" >
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-3 slick-slide slick-cloned" tabindex="-1" role="option"
+                aria-describedby="slick-slide00" style="width: 290px;" data-slick-index="2" aria-hidden="true">
+                <div class="client-item">
+                  <div class="inner">
+                    <img src="./images/clinica.png" alt="client-name" style="height: 60px;">
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- section contact -->
+      <section id="contact" class="shadow-blue white-bg padding">
+        <h3 class="section-title">Ponerse en contacto</h3>
+        <div class="spacer" data-height="80"></div>
+
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <!-- contact info -->
+            <div class="contact-info mb-5">
+              <i class="icon-phone"></i>
+              <div class="details">
+                <h5>Celular</h5>
+                <span>+569 65004665</span>
+              </div>
+            </div>
+            <div class="contact-info mb-5">
+              <i class="icon-envelope"></i>
+              <div class="details">
+                <h5>Correo Electrónico</h5>
+                <span>pipe.castro.espinoza@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-info">
+              <i class="icon-location-pin"></i>
+              <div class="details">
+                <h5>Localidad</h5>
+                <span>Santiago, CL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <!-- Contact Form -->
+            <form id="contact-form" class="contact-form" method="POST"
+              action="https://formsubmit.co/pipe.castro.espinoza@gmail.com">
+              <div class="messages"></div>
+
+              <div class="row">
+                <div class="column col-md-6">
+                  <!-- Name input -->
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Tu nombre"
+                      required="required" data-error="Name is required." />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+
+                <div class="column col-md-6">
+                  <!-- Email input -->
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Correo electronico"
+                      required="required" data-error="Email is required." />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+
+                <div class="column col-md-12">
+                  <!-- Email input -->
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto"
+                      required="required" data-error="Subject is required." />
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+
+                <div class="column col-md-12">
+                  <!-- Message textarea -->
+                  <div class="form-group">
+                    <textarea name="message" id="message" class="form-control" rows="5" placeholder="Mensaje"
+                      required="required" data-error="Message is required."></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <!-- <div class="column col-md-12">
+                    <div
+                      class="g-recaptcha"
+                      data-sitekey="6Lf2DrYUAAAAAGrNQQHNaSUEW6YuzLCSPuRkMXwh"
+                      style="
+                        transform: scale(0.77);
+                        -webkit-transform: scale(0.77);
+                        transform-origin: 0 0;
+                        -webkit-transform-origin: 0 0;
+                      "
+                    ></div>
+                  </div> -->
+              </div>
+
+              <button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default">
+                <i class="icon-paper-plane"></i>Enviar Mensaje
+              </button><!-- Send Button -->
+            </form>
+            <!-- Contact Form end -->
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Go to top button -->
+  <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- SCRIPTS -->
+  <script src="./js/jquery-1.12.3.min.js"></script>
+  <script src="./js/jquery.easing.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/jquery.waypoints.min.js"></script>
+  <script src="./js/jquery.counterup.min.js"></script>
+  <script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="./js/isotope.pkgd.min.js"></script>
+  <script src="./js/infinite-scroll.min.js"></script>
+  <script src="./js/imagesloaded.pkgd.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/validator.js"></script>
+  <script src="./js/custom.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+</body>
+
+</html>
